@@ -2,6 +2,8 @@
 module LogAnalysis where
 import Log
 
+-- possible improvement: use reads or readMaybe instead of using read which throws an exception
+
 parseMessage :: String -> LogMessage
 parseMessage x = parseWords . words $ x
 
